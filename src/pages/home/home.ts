@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 @Component({
@@ -6,10 +6,7 @@ import { NavController } from 'ionic-angular';
     templateUrl: 'home.html'
 })
 export class HomePage {
-    hello = ["a", "b", "c", "d","e"];
     constructor(public navCtrl: NavController) {
-        for (let item of this.hello) {
-            alert(item);
-        }
+        
     }
 }

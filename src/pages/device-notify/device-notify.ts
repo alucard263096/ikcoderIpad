@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { TabsPage } from "../tabs/tabs";
 
 /**
  * Generated class for the DeviceNotifyPage page.
@@ -22,10 +23,10 @@ export class DeviceNotifyPage {
   }
 
   OK() {
-      this.navCtrl.push("");
+      this.navCtrl.push(TabsPage);
   }
   NO() {
-      this.navCtrl.push("");
+      this.navCtrl.push(TabsPage);
   }
 
 }

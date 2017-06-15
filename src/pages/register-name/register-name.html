@@ -1,0 +1,45 @@
+﻿<!--
+  Generated template for the RegisterNamePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content padding [class.warning]="false">
+
+  <ion-grid >
+    <ion-row>
+      <ion-col col-2></ion-col>
+      <ion-col col-8>
+        <h1>你叫什么名字？</h1>
+      </ion-col>
+      <ion-col col-2></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-2></ion-col>
+      <ion-col col-8>
+        <ion-label stacked ><h4>姓氏</h4></ion-label>
+        <ion-input type="text" style="border-bottom:1px solid #ffffff"  [(ngModel)]="familyname"></ion-input>
+      </ion-col>
+      <ion-col col-2></ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-2></ion-col>
+      <ion-col col-8>
+        <ion-label stacked><h4>名字</h4></ion-label>
+        <ion-input type="text" style="border-bottom:1px solid #ffffff" [(ngModel)]="name"></ion-input>
+      </ion-col>
+      <ion-col col-2></ion-col>
+    </ion-row>
+
+    <ion-row style="margin-top:200px;">
+      <ion-col col-11 text-right>
+        <button ion-button icon-left large round color="light" (click)="Next();">
+          <span style="color:#459A94">下一步</span>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

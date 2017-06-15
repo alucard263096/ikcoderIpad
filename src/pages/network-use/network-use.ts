@@ -1,33 +1,30 @@
 ﻿import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { TabsPage } from '../tabs/tabs';
 
 /**
- * Generated class for the LoginPage page.
+ * Generated class for the NetworkUsePage page.
  *
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
 @IonicPage()
 @Component({
-  selector: 'page-login',
-  templateUrl: 'login.html',
+  selector: 'page-network-use',
+  templateUrl: 'network-use.html',
 })
-export class LoginPage {
+export class NetworkUsePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-
   }
 
   ionViewDidLoad() {
-      console.log('ionViewDidLoad LoginPage');
-
-  }
-  gotoWechatLogin() {
-      this.navCtrl.push("NetworkUsePage");
-  }
-  gotoLogin() {
-      this.navCtrl.push("RegisterNamePage");
+    console.log('ionViewDidLoad NetworkUsePage');
   }
 
+  OK() {
+      this.navCtrl.push("DeviceNotifyPage");
+  }
+  NO() {
+      this.navCtrl.push("DeviceNotifyPage");
+  }
 }
