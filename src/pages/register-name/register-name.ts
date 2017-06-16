@@ -48,5 +48,6 @@ export class RegisterNamePage {
             this.presentBottomToast("名字不能为空");
             return;
         }
+        this.navCtrl.push("RegisterMobilePage");
     }
 }
