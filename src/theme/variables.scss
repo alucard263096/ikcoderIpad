@@ -25,11 +25,15 @@ $font-path: "../assets/fonts";
 
 $colors: (
   primary:    #459A94,
+  primary2:   #91C656,
+    orange:   #FC7000,
+    gray:#EAEAEA,
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
   dark:       #222
 );
+
 
 
 // App iOS Variables
@@ -76,3 +80,4 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+

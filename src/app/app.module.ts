@@ -13,31 +13,40 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 @NgModule({
-  declarations: [
-    MyApp,
-    LoginPage,
-    AboutPage,
-    ContactPage,
-    HomePage,
-    TabsPage
-  ],
-  imports: [
-    BrowserModule,
-    IonicModule.forRoot(MyApp)
-  ],
-  bootstrap: [IonicApp],
-  entryComponents: [
-    MyApp,
-    LoginPage,
-    AboutPage,
-    ContactPage,
-    HomePage,
-    TabsPage
-  ],
-  providers: [
-    StatusBar,
-    SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
-  ]
+    declarations: [
+        MyApp,
+        LoginPage,
+        AboutPage,
+        ContactPage,
+        HomePage,
+        TabsPage
+    ],
+    imports: [
+        BrowserModule, //for 3.0
+        IonicModule.forRoot(MyApp, {
+            backButtonText: '',
+            iconMode: 'ios',
+            modalEnter: 'modal-slide-in',
+            modalLeave: 'modal-slide-out',
+            tabsPlacement: 'bottom',
+            pageTransition: 'ios',
+            backButtonIcon: "ios-arrow-back",
+            statusbarPadding: false
+        })
+    ],
+    bootstrap: [IonicApp],
+    entryComponents: [
+        MyApp,
+        LoginPage,
+        AboutPage,
+        ContactPage,
+        HomePage,
+        TabsPage
+    ],
+    providers: [
+        StatusBar,
+        SplashScreen,
+        { provide: ErrorHandler, useClass: IonicErrorHandler }
+    ]
 })
 export class AppModule {}
