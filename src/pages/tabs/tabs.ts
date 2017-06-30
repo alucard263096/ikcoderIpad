@@ -4,6 +4,8 @@ import { AboutPage } from '../about/about';
 import { ContactPage } from '../contact/contact';
 import { HomePage } from '../home/home';
 import { LoginPage } from '../login/login';
+import { MailboxPage } from '../mailbox/mailbox';
+import { MemberPage } from '../member/member';
 
 import { BasePage } from '../../app/base.page';
 
@@ -15,6 +17,8 @@ export class TabsPage extends BasePage {
   tab1Root = HomePage;
   tab2Root = AboutPage;
   tab3Root = ContactPage;
+  tab4Root = MailboxPage;
+  tab5Root = MemberPage;
 
   constructor(public modalCtrl: ModalController) {
       super();

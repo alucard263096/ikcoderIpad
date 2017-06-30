@@ -1,0 +1,29 @@
+page-mailbox {
+    
+    .toolbar-background-ios{
+        background-image:url(/assets/images/bg1.png);
+    }
+    .toolbar-title-ios{
+        color:#f4f4f4;
+    }
+
+    .bodertable{
+        height:calc(100%);
+        width:calc(100%);
+    }
+    .bodertable .th{
+        width:calc(15%);
+        text-align:center;
+        background-color:#828A8E;
+        color:white;
+        font-weight:bold;
+        font-size:large;
+    }
+    .bodertable ion-icon{
+        font-size:7rem;
+    }
+    
+    .bodertable .active{
+        background-color:#ED578A;
+    }
+}
