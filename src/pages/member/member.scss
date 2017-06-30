@@ -1,0 +1,61 @@
+page-member {
+    
+    .toolbar-background-ios{
+        background-image:url(/assets/images/bg1.png);
+    }
+    .toolbar-title-ios{
+        color:#f4f4f4;
+    }
+
+    .bodertable{
+        width:calc(100%);
+        min-height:calc(40%);
+        font-weight:bold;
+    }
+    .bodertable .th{
+        width:calc(15%);
+        text-align:center;
+        background-color:#F8FAFB;
+        color:#6B818C;
+        font-size:large;
+    }
+    .bodertable .person{
+        color:#4DD0E1;
+        font-size:7rem;
+    }
+    .bodertable .person{
+        color:#4DD0E1;
+        font-size:7rem;
+    }
+    
+    .bodertable .unlock{
+        color:#EBA867;
+        font-size:7rem;
+    }
+
+    .formbox tr{
+
+    }
+    .textbox_div{
+        width:100%;
+        border:1px solid #cccccc;
+        border-radius:3px;
+    }
+    .textbox{
+        width:100%;
+        padding:10px;
+        border:0px;
+        font-weight:normal;
+    }
+    
+    .radio{
+        width:30px;
+        color:blue;
+    }
+    .select{
+        text-align:left;
+        width:100px;
+        padding:10px;
+        border:1px solid #cccccc;
+    }
+}
